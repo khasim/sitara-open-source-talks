@@ -1,0 +1,22 @@
+title: "Sitara MPU | Open Source"
+description: "Open source engineering talks, blogs and videos from the Sitara MPU software team."
+url: "https://khasim.github.io"
+baseurl: "/sitara-open-source-talks"
+theme: null
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+collections:
+  talks:
+    output: true
+    permalink: /talks/:name/
+  videos:
+    output: true
+    permalink: /videos/:name/
+defaults:
+  - scope: {path: "", type: "posts"}
+    values: {layout: "post"}
+  - scope: {path: "", type: "talks"}
+    values: {layout: "talk"}
+  - scope: {path: "", type: "videos"}
+    values: {layout: "video"}
+exclude: [README.md, Gemfile, Gemfile.lock, vendor]

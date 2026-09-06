@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title><meta name="description" content="{{ page.description | default: site.description }}"><link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"></head><body><header class="site-header"><div class="nav-wrap"><a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">TI</span><span>SITARA MPU<br><small>OPEN SOURCE</small></span></a><nav><a href="{{ '/blog/' | relative_url }}">Blogs</a><a href="{{ '/talks/' | relative_url }}">Talks</a><a href="{{ '/videos/' | relative_url }}">Videos</a></nav></div></header><main>{{ content }}</main>
+
+<footer class="site-footer">
+
+  <div class="footer-main">
+
+    <div class="footer-brand">
+      <div class="footer-logo-box">
+        <img src="{{ '/assets/images/ti-logo.png' | relative_url }}"
+             alt="Texas Instruments">
+      </div>
+
+      <div class="footer-brand-name">
+        Sitara MPU · Open Source
+      </div>
+    </div>
+
+    <p class="footer-description">
+      Texas Instruments has been making progress possible for decades.
+      We are a global semiconductor company that designs, manufactures,
+      tests and sells analog and embedded processing chips. Our products
+      help our customers efficiently manage power, accurately sense and
+      transmit data and provide the core control or processing in their
+      designs.
+    </p>
+
+    <div class="footer-links">
+      <a href="https://www.ti.com/" target="_blank" rel="noopener noreferrer">TI.com</a>
+
+      <a href="https://www.ti.com/design-development/software-design/open-source.html"
+         target="_blank" rel="noopener noreferrer">TI Open Source</a>
+
+      <a href="https://github.com/TexasInstruments"
+         target="_blank" rel="noopener noreferrer">TI GitHub</a>
+
+      <a href="https://sitarasom.com/"
+         target="_blank" rel="noopener noreferrer">Sitara SOM Partners</a>
+    </div>
+
+    <div class="copyright">
+      © 2026 Texas Instruments Incorporated. All rights reserved.
+    </div>
+
+  </div>
+
+</footer>

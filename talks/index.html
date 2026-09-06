@@ -1,0 +1,5 @@
+---
+layout: default
+title: Talks
+---
+<section class="page-head"><p class="eyebrow">CONFERENCE TALKS</p><h1>Engineers on stage.</h1><p>Open-source engineering talks from conferences and community events.</p></section><div class="list">{% for talk in site.talks %}<article class="list-card"><div><p class="kicker">{{ talk.category }} · {{ talk.conference }}</p><h2><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h2><p>{{ talk.description }}</p><p class="meta">{{ talk.speaker }} · {{ talk.year }}</p></div><a class="read-more" href="{{ talk.url | relative_url }}">Details →</a></article>{% endfor %}</div>

@@ -1,0 +1,5 @@
+---
+layout: default
+title: Blogs
+---
+<section class="page-head"><p class="eyebrow">ENGINEERING BLOGS</p><h1>Ideas worth sharing.</h1><p>Practical lessons from embedded Linux, security, DSP, Zephyr, power and beyond.</p></section><div class="list">{% for post in site.posts %}<article class="list-card"><div><p class="kicker">{{ post.categories | join: " · " }}</p><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p>{{ post.description }}</p><p class="meta">{{ post.author }} · {{ post.date | date: "%b %d, %Y" }}</p></div><a class="read-more" href="{{ post.url | relative_url }}">Read →</a></article>{% endfor %}</div>

@@ -1,0 +1,5 @@
+---
+layout: default
+title: Videos
+---
+<section class="page-head"><p class="eyebrow">TECHNICAL VIDEOS</p><h1>Watch the engineering.</h1><p>Talk recordings and technical walkthroughs from the Sitara MPU software community.</p></section><div class="list">{% for video in site.videos %}<article class="list-card"><div><p class="kicker">{{ video.category }}</p><h2><a href="{{ video.url | relative_url }}">{{ video.title }}</a></h2><p>{{ video.description }}</p><p class="meta">{{ video.speaker }} · {{ video.year }}</p></div><a class="read-more" href="{{ video.url | relative_url }}">Watch →</a></article>{% endfor %}</div>
