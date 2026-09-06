@@ -1,0 +1,190 @@
+---
+layout: default
+title: App Notes
+---
+
+<div class="page-title-bar">
+  <div class="page-title-inner">
+    Sitara Community Connect · App Notes
+  </div>
+</div>
+
+<main class="app-notes-page">
+
+  <section class="app-notes-intro">
+    <div class="eyebrow">APPLICATION NOTES</div>
+
+    <h1>Engineering knowledge from TI</h1>
+
+    <p>
+      A curated index of publicly available Texas Instruments application
+      notes and engineering guides relevant to Sitara processors.
+    </p>
+
+    <p class="app-notes-source">
+      Documents open on TI.com, the source of record for the latest revision.
+    </p>
+  </section>
+
+
+  <div class="app-notes-filters">
+
+    <button class="app-filter active" data-filter="all">
+      All
+    </button>
+
+    <button class="app-filter" data-filter="AM62x">
+      AM62x
+    </button>
+
+    <button class="app-filter" data-filter="AM62P">
+      AM62P
+    </button>
+
+    <button class="app-filter" data-filter="AM64x">
+      AM64x
+    </button>
+
+    <button class="app-filter" data-filter="Software">
+      Software
+    </button>
+
+    <button class="app-filter" data-filter="Hardware">
+      Hardware
+    </button>
+
+    <button class="app-filter" data-filter="Power">
+      Power
+    </button>
+
+    <button class="app-filter" data-filter="Security">
+      Security
+    </button>
+
+  </div>
+
+
+  <div class="app-notes-count">
+    {{ site.data.app_notes | size }} engineering documents
+  </div>
+
+
+  <section class="app-notes-grid">
+
+    {% for note in site.data.app_notes %}
+
+    <article
+      class="app-note-card"
+      data-family="{{ note.family }}"
+      data-category="{{ note.category }}"
+    >
+
+      <div class="app-note-meta">
+
+        <span class="app-note-family">
+          {{ note.family }}
+        </span>
+
+        <span class="app-note-category">
+          {{ note.category }}
+        </span>
+
+      </div>
+
+
+      {% if note.featured %}
+      <div class="app-note-featured">
+        FEATURED
+      </div>
+      {% endif %}
+
+
+      <h2>
+        {{ note.title }}
+      </h2>
+
+
+      <p>
+        {{ note.description }}
+      </p>
+
+
+      <div class="app-note-footer">
+
+        <span class="app-note-type">
+          {{ note.type }}
+        </span>
+
+        <a
+          href="{{ note.url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Read on TI.com →
+        </a>
+
+      </div>
+
+    </article>
+
+    {% endfor %}
+
+  </section>
+
+
+  <section class="app-notes-disclaimer">
+
+    <strong>About this index</strong>
+
+    <p>
+      This is a community-maintained discovery page and is not an official
+      TI documentation index. Titles and document revisions may change on
+      TI.com. Always use the linked TI.com document as the authoritative
+      source for the latest revision.
+    </p>
+
+  </section>
+
+</main>
+
+
+<script>
+
+document.querySelectorAll(".app-filter").forEach(function(button) {
+
+  button.addEventListener("click", function() {
+
+    document
+      .querySelectorAll(".app-filter")
+      .forEach(function(item) {
+        item.classList.remove("active");
+      });
+
+    button.classList.add("active");
+
+    var filter = button.getAttribute("data-filter");
+
+    document
+      .querySelectorAll(".app-note-card")
+      .forEach(function(card) {
+
+        var family =
+          card.getAttribute("data-family") || "";
+
+        var category =
+          card.getAttribute("data-category") || "";
+
+        var show =
+          filter === "all" ||
+          family.indexOf(filter) !== -1 ||
+          category.indexOf(filter) !== -1;
+
+        card.style.display = show ? "" : "none";
+
+      });
+
+  });
+
+});
+
+</script>

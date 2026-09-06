@@ -1,0 +1,175 @@
+- title: "Enable PipeWire on TI Sitara Devices"
+  family: "AM62x"
+  category: "Software"
+  description: "Build and configure PipeWire and WirePlumber on Sitara devices using Yocto-based embedded Linux."
+  url: "https://www.ti.com/lit/an/sdaa320/sdaa320.pdf"
+  type: "Application Note"
+  featured: false
+
+- title: "Linux Audio on Sitara SoCs"
+  family: "AM62x"
+  category: "Audio"
+  description: "Architecture and implementation guidance for Linux audio using ALSA, ASoC and Sitara platforms."
+  url: "https://www.ti.com/lit/an/sdaa199/sdaa199.pdf"
+  type: "Application Note"
+  featured: false
+
+- title: "AM62x Audio Design Guide"
+  family: "AM62x"
+  category: "Audio"
+  description: "Hardware and system-level audio design considerations for AM62x platforms."
+  url: "https://www.ti.com/product/AM623"
+  type: "Design Guide"
+  featured: true
+
+- title: "AM62x Power Consumption"
+  family: "AM62x"
+  category: "Power"
+  description: "Power-consumption characterization and guidance for representative AM62x workloads and operating modes."
+  url: "https://www.ti.com/lit/pdf/spradg1"
+  type: "Application Note"
+  featured: true
+
+- title: "Basic Ethernet Interface Debug With Linux"
+  family: "AM62x"
+  category: "Networking"
+  description: "A practical workflow for debugging Ethernet interfaces on TI MPU platforms running Linux."
+  url: "https://www.ti.com/lit/an/spradj8/spradj8.pdf"
+  type: "Application Note"
+  featured: false
+
+- title: "AM62x PCB Escape Routing"
+  family: "AM62x"
+  category: "Hardware"
+  description: "PCB escape-routing considerations for AM62x processor designs."
+  url: "https://www.ti.com/product/AM623"
+  type: "Design Guide"
+  featured: false
+
+- title: "Getting Started with SysConfig Tool"
+  family: "AM62x"
+  category: "Software"
+  description: "Introduction to configuring TI devices and generating initialization code using SysConfig."
+  url: "https://www.ti.com/product/AM623"
+  type: "Application Note"
+  featured: false
+
+- title: "Display Interfaces: A Comprehensive Guide to Sitara MPU Visualization Designs"
+  family: "AM62x"
+  category: "Display"
+  description: "Display-interface design considerations for visualization systems using Sitara MPUs."
+  url: "https://www.ti.com/product/AM623"
+  type: "Design Guide"
+  featured: false
+
+- title: "Bad Block Management for Serial NAND Flash on Sitara Devices"
+  family: "Sitara"
+  category: "Storage"
+  description: "Guidance for managing bad blocks when using serial NAND flash with Sitara processors."
+  url: "https://www.ti.com/product/AM62P"
+  type: "Application Note"
+  featured: false
+
+- title: "OSPI NOR Flash Debug Support on AM6x and TDA4VEN"
+  family: "Sitara"
+  category: "Storage"
+  description: "Methods for reading and debugging NOR-flash configuration registers using U-Boot and MCU+ SDK."
+  url: "https://www.ti.com/lit/an/sdaa066/sdaa066.pdf"
+  type: "Application Note"
+  featured: false
+
+- title: "Estimating Application Useful Lifetimes for Sitara MPU Products"
+  family: "Sitara"
+  category: "System"
+  description: "A methodology for estimating application useful lifetime across Sitara MPU products."
+  url: "https://www.ti.com/lit/pdf/spradi9"
+  type: "Application Report"
+  featured: false
+
+- title: "Sitara Processor Power Distribution Networks: Implementation and Analysis"
+  family: "Sitara"
+  category: "Power"
+  description: "Power-distribution-network design and analysis guidance for Sitara processors."
+  url: "https://www.ti.com/product/AM623"
+  type: "Application Note"
+  featured: false
+
+- title: "AM62Px eMMC Board Design and Layout Guidelines"
+  family: "AM62P"
+  category: "Storage"
+  description: "Board-design and simulation guidance for eMMC interfaces on AM62Px processors."
+  url: "https://www.ti.com/lit/an/spradp5/spradp5.pdf"
+  type: "Design Guide"
+  featured: true
+
+- title: "AM62P Processor Family Schematic Design Guidelines and Review Checklist"
+  family: "AM62P"
+  category: "Hardware"
+  description: "Systematic schematic-review guidance for custom AM62P processor designs."
+  url: "https://www.ti.com/lit/an/spradn4/spradn4.pdf"
+  type: "Application Report"
+  featured: true
+
+- title: "AM62P Benchmarks"
+  family: "AM62P"
+  category: "Performance"
+  description: "Performance characterization and benchmark information for the AM62P processor family."
+  url: "https://www.ti.com/product/AM62P"
+  type: "Application Note"
+  featured: false
+
+- title: "Enabling Matter on Sitara MPU"
+  family: "Sitara"
+  category: "Connectivity"
+  description: "Application guidance for bringing Matter connectivity to Sitara MPU platforms."
+  url: "https://www.ti.com/product/AM62L"
+  type: "Application Note"
+  featured: false
+
+- title: "Convert Sitara MPU HS-FS Silicon to HS-SE with No Boot Mode Switch"
+  family: "Sitara"
+  category: "Security"
+  description: "Production-security guidance for configuring Sitara MPU silicon security states."
+  url: "https://www.ti.com/product/AM62L"
+  type: "Application Note"
+  featured: false
+
+- title: "AM6442, AM6422, AM6412 and AM2434 Schematic Design and Review Checklist"
+  family: "AM64x"
+  category: "Hardware"
+  description: "Schematic review guidance covering common design requirements for AM64x and AM243x platforms."
+  url: "https://www.ti.com/lit/an/spracu5c/spracu5c.pdf"
+  type: "Application Report"
+  featured: true
+
+- title: "Enhanced OSPI PHY Tuning Algorithm for Sitara Processors on MCU+ SDK"
+  family: "AM64x"
+  category: "Storage"
+  description: "OSPI PHY tuning guidance for Sitara processors using MCU+ SDK."
+  url: "https://www.ti.com/product/AM6442"
+  type: "Application Note"
+  featured: false
+
+- title: "Throughput Characterization of OSPI and QSPI Serial NOR/NAND Flash Operations on MCU+ SDK"
+  family: "AM64x"
+  category: "Storage"
+  description: "Characterization of flash-interface throughput on Sitara platforms."
+  url: "https://www.ti.com/product/AM6442"
+  type: "Application Note"
+  featured: false
+
+- title: "HSR/PRP Solutions on Sitara Processors for Grid Substation Communication"
+  family: "AM64x"
+  category: "Industrial Networking"
+  description: "Industrial networking guidance for high-availability Ethernet using HSR and PRP."
+  url: "https://www.ti.com/product/AM6442"
+  type: "Application Note"
+  featured: false
+
+- title: "Processor-SDK RTOS Power Management and Measurement"
+  family: "Sitara"
+  category: "Power"
+  description: "Power-management framework and measurement guidance for Sitara processors using Processor SDK RTOS."
+  url: "https://www.ti.com/lit/an/spraca5/spraca5.pdf"
+  type: "Application Note"
+  featured: false
