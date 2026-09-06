@@ -8,6 +8,18 @@
     flex-shrink:0;
 }
 
+.taracom-brand {
+  max-width: 1120px;
+  margin: 20px auto 0;
+  padding: 0 24px;
+}
+
+.taracom-brand img {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+
 /* Community contribution section */
 
 .community-section {
